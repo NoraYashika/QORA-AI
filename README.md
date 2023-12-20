@@ -5,8 +5,9 @@
     <p>
         Current Version: 1.0.0 <a href = "./.github/updates.md">(update logs)</a><br>
         Start of project: around 06/2021<br>
-        You can find a guide <a href = "./.github/guide.md">here</a>.<br>
         Recommended OS: Windows, may work on linux too, but with limited functionality
+        You can find a guide <a href = "./.github/guide.md">here</a>.<br>
+        And the current development goals are <a href = "./.github/goals.md">here</a>.<br>
     </p>
 </div>
  
