@@ -3,22 +3,25 @@
 # Data
 Current Version: 1.0.0 <a href = "./.github/updates.md">(update logs)</a><br>
 Start of project: around 06/2021<br>
-You can find a guide <a href = "./.github/guide.md">here</a>.
+You can find a guide <a href = "./.github/guide.md">here</a>.<br>
+Recommended OS: Windows, may work on linux too, but with limited functionality
  
 # Planning
 ## General Planning
-- [x] Making a usage guide
+- [x] Making a usage guide 📖
+- [ ] Adding execution parameters 🧰🔧
 - [ ] Making a GUI 🖥
+- [ ] Making it cross-compatible with all operating systems, capable of using python ⚙
 - [ ] <strong>possibly</strong> rewriting the System in an other language 🧰
 
 ## Making importable Modules 🧩
 - [ ] a time module, to tell the current time and date. ⏲📅
 - [ ] a translation plugin, to make it able to communicate with the user in a set language 🅰➡🅱
 - [ ] a translator module, to make it able to translate from one language into another set language 🅰➡🅱
-- [ ] a module to evaluate data and make rough predictions
+- [ ] a module to evaluate data and make rough predictions 💭
 
 ## Planning regarding the neural network 
-- [ ] making it learn from user input and mistakes
+- [ ] making it learn from user input and mistakes 👍👎
 - [ ] a way to take out any bias out of the network 🧠
 - [ ] increasing the accurracy and taking out interpretation errors ❌
 
