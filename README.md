@@ -7,7 +7,7 @@ You can find a guide <a href = "./.github/guide.md">here</a>.
  
 # Planning
 ## General Planning
-- [ ] Making a usage guide
+- [x] Making a usage guide
 - [ ] Making a GUI 🖥
 - [ ] <strong>possibly</strong> rewriting the System in an other language 🧰
 
