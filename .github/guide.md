@@ -35,8 +35,8 @@
     <ol>
         <li> open a cmd/terminal in the root folder, where the ai is located.</li>
         <li> Execute training.py with the following command:<br>
-             `python training.py -epochs [amount of epochs, by default 100]` [execution parameters will be added in 1.2.0]
+             <pre>python training.py -epochs [amount of epochs, by default 100]</pre> [execution parameters will be added in 1.2.0]
         </li>
-        <li> Execute QORA.py with the command `python QORA.py`
+        <li> Execute QORA.py with the command <pre>python QORA.py</pre>
     </ol>
 </div>
