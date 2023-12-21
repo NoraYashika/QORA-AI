@@ -26,6 +26,8 @@
 - [ ] a module to evaluate data and make rough predictions 💭
 
 ## Planning regarding the neural network 
+- [ ] Fixing the non-fatal errors on execution of training.py 🛠
+- [ ] Adding calculation of average accuracy 📊
 - [ ] making it learn from user input and mistakes 👍👎
 - [ ] a way to take out any bias out of the network 🧠
 - [ ] increasing the accurracy and taking out interpretation errors ❌
