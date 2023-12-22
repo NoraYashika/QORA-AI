@@ -11,10 +11,13 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
-from tensorflow.keras.callbacks import LearningRateScheduler
+from tensorflow.keras.callbacks import LearningRateScheduler, Callback
 
 # os for filepaths
 import os
+
+# sys for execution parameters
+import sys
 
 def learning_rate_schedule(epoch):
     initial_learning_rate = 0.01
@@ -26,8 +29,25 @@ lemmatizer = WordNetLemmatizer()
 
 intents = json.load(open(f'{os.getcwd()}\\intents.json', 'r'))
 
-batch = 3
-epochs = 500
+if "-batch" in sys.argv:
+    batch = int(sys.argv[sys.argv.index("-batch") + 1])
+else:
+    batch = 3
+
+if "-epochs" in sys.argv:
+    epochs = int(sys.argv[sys.argv.index("-epochs") + 1])
+else:
+    epochs = 500
+
+if "-calculate" in sys.argv:
+    calculate = True
+    if "--percent" in sys.argv:
+        percent = True
+    else:
+        percent = False
+else:
+    calculate = False
+
 losstype = 'categorical_crossentropy' #tf.compat.v1.losses.sparse_softmax_cross_entropy()
 
 words = []
@@ -87,6 +107,17 @@ model.compile(loss = losstype, optimizer = sgd, metrics = ['accuracy'])
 hist = model.fit(np.array(train_x), np.array(train_y), epochs = epochs, batch_size = batch, verbose = 1, callbacks = [lr_scheduler])
 
 model.save(f'{os.getcwd()}\\network\\qora_neural_network.keras', hist)
+
+if calculate == True:
+    accuracy_values = hist.history['accuracy']
+    average_accuracy = sum(accuracy_values) / len(accuracy_values)
+    if percent == True:
+        average_accuracy_percent = average_accuracy / 100
+        print(f"Average accuracy (%): {average_accuracy_percent}")
+    else:    
+        print(f"Average accuracy: {average_accuracy:.4f}")
+else:
+    pass
 
 print("Done")
 input("Press any Button to close the training program...")

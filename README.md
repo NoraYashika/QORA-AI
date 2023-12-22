@@ -3,7 +3,7 @@
 <div id = "div_data">
     <h2>Data</h2>
     <p>
-        Current Version: 1.0.0 <a href = "./.github/updates.md">(update logs)</a><br>
+        Current Version: 1.1.0 <a href = "./.github/updates.md">(update logs)</a><br>
         Start of project: around 06/2021<br>
         Recommended OS: Windows, may work on linux too, but with limited functionality
         You can find a guide <a href = "./.github/guide.md">here</a>.<br>
@@ -14,7 +14,7 @@
 # Planning
 ## General Planning
 - [x] Making a usage guide 📖
-- [ ] Adding execution parameters 🧰🔧
+- [x] Adding execution parameters 🧰🔧
 - [ ] Making a GUI 🖥
 - [ ] Making it cross-compatible with all operating systems, capable of using python ⚙
 - [ ] <strong>possibly</strong> rewriting the System in an other language 🧰
@@ -24,10 +24,11 @@
 - [ ] a translation plugin, to make it able to communicate with the user in a set language 🅰➡🅱
 - [ ] a translator module, to make it able to translate from one language into another set language 🅰➡🅱
 - [ ] a module to evaluate data and make rough predictions 💭
+- [ ] a tts module 🗣
 
 ## Planning regarding the neural network 
 - [ ] Fixing the non-fatal errors on execution of training.py 🛠
-- [ ] Adding calculation of average accuracy 📊
+- [x] Adding calculation of average accuracy 📊
 - [ ] making it learn from user input and mistakes 👍👎
 - [ ] a way to take out any bias out of the network 🧠
 - [ ] increasing the accurracy and taking out interpretation errors ❌

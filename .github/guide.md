@@ -35,7 +35,14 @@
     <ol>
         <li> open a cmd/terminal in the root folder, where the ai is located.</li>
         <li> Execute training.py with the following command:<br>
-             <pre>python training.py -epochs [amount of epochs, by default 100]</pre> [execution parameters will be added in 1.2.0]
+             <pre>
+python training.py -epochs [amount of epochs, by default 100]
+                   -batch [amount of data, passed to the neural network, by default 3]
+                   [-calculate| add parameter to calculate the average accuracy]
+                   -> [--percent| add parameter to return the average accuracy in percent]
+                      only works with -calculate parameter
+            </pre>
+                   [execution parameters will be added in 1.2.0]
         </li>
         <li> Execute QORA.py with the command <pre>python QORA.py</pre>
     </ol>
