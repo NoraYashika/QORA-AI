@@ -36,6 +36,7 @@
 </div>
 
 <h1>- Version 1.1.1 -</h1>
+<h2> Release 22.12.2023 </h2>
 Fixed Percent calculation mistake.<br>
 The corrected calculation:<br>
 accuracy<sub>total</sub> = accuracy<sub>epoch_1</sub> + ... + accuracy<sub>epoch_n</sub><br><br>

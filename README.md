@@ -3,7 +3,7 @@
 <div id = "div_data">
     <h2>Data</h2>
     <p>
-        Current Version: 1.1.0 <a href = "./.github/updates.md">(update logs)</a><br>
+        Current Version: 1.1.1 <a href = "./.github/updates.md">(update logs)</a><br>
         Start of project: around 06/2021<br>
         Recommended OS: Windows, may work on linux too, but with limited functionality
         You can find a guide <a href = "./.github/guide.md">here</a>.<br>
