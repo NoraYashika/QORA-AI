@@ -1,0 +1,2 @@
+# Acknowledgements
+Thank you to my good Friend Clara, for helping me with her knowledge of the English language and helping me through the trouble with this thing and helping me expand this AIs vocabulary
