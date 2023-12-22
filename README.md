@@ -33,7 +33,7 @@
 - [ ] a way to take out any bias out of the network 🧠
 - [ ] increasing the accurracy and taking out interpretation errors ❌
 
-The file "intents.json" is constantly being updated to increase the vocabulary of the neural network and I try to release Updates on a bi-weekly basis. 🔄
+The file "intents.json" is constantly being updated to increase the vocabulary of the neural network and I try to release Updates for it on a bi-weekly basis. 🔄
 
 if you have any requests or ideas, open an issue, I am all ears!! 😀
 
