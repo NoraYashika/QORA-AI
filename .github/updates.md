@@ -34,3 +34,10 @@
         accuracy<sub>average</sub> / 100 = accuracy<sub>average in percent</sub>
     </p>
 </div>
+
+<h1>- Version 1.1.1 -</h1>
+Fixed Percent calculation mistake.<br>
+The corrected calculation:<br>
+accuracy<sub>total</sub> = accuracy<sub>epoch_1</sub> + ... + accuracy<sub>epoch_n</sub><br><br>
+accuracy<sub>average</sub> = accuracy<sub>total</sub> / amount of epochs<br><br>
+accuracy<sub>average</sub> <ins>*</ins> 100 = accuracy<sub>average in percent</sub>

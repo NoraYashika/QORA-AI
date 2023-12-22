@@ -112,7 +112,7 @@ if calculate == True:
     accuracy_values = hist.history['accuracy']
     average_accuracy = sum(accuracy_values) / len(accuracy_values)
     if percent == True:
-        average_accuracy_percent = average_accuracy / 100
+        average_accuracy_percent = average_accuracy * 100
         print(f"Average accuracy (%): {average_accuracy_percent}")
     else:    
         print(f"Average accuracy: {average_accuracy:.4f}")
