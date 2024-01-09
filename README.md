@@ -1,5 +1,8 @@
 # QORA AI
 
+## Announcement:
+## Updates will be paused for an unknown time (possibly until Feburary 2024)
+
 <div id = "div_data">
     <h2>Data</h2>
     <p>
