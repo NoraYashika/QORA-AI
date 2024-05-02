@@ -6,11 +6,10 @@
 <div id = "div_data">
     <h2>Data</h2>
     <p>
-        Current Version: 1.1.1 <a href = "./.github/updates.md">(update logs)</a><br>
+        Current Version: 1.2.0 <a href = "./.github/updates.md">(update logs)</a><br>
         Start of project: around 06/2021<br>
         Recommended OS: Windows, may work on linux too, but with limited functionality
         You can find a guide <a href = "./.github/guide.md">here</a>.<br>
-        And the current development goals are <a href = "./.github/goals.md">here</a>.<br>
     </p>
 </div>
  
@@ -21,9 +20,10 @@
 - [ ] Making a GUI 🖥
 - [ ] Making it cross-compatible with all operating systems, capable of using python ⚙
 - [ ] <strong>possibly</strong> rewriting the System in an other language 🧰
+- [ ] User Settings for more customizability (first with .ini file, later with GUI >> see in GUI update)
 
 ## Making importable Modules 🧩
-- [ ] a time module, to tell the current time and date. ⏲📅
+- [x] a time module, to tell the current time and date. ⏲📅
 - [ ] a translation plugin, to make it able to communicate with the user in a set language 🅰➡🅱
 - [ ] a translator module, to make it able to translate from one language into another set language 🅰➡🅱
 - [ ] a module to evaluate data and make rough predictions 💭
@@ -36,7 +36,7 @@
 - [ ] a way to take out any bias out of the network 🧠
 - [ ] increasing the accurracy and taking out interpretation errors ❌
 
-The file "intents.json" is constantly being updated to increase the vocabulary of the neural network and I try to release Updates for it on a bi-weekly basis. 🔄
+The file "intents.json" is constantly being updated to increase the vocabulary of the neural network and I <strong>try</strong> to release Updates for it on a bi-weekly basis. 🔄
 
 if you have any requests or ideas, open an issue, I am all ears!! 😀
 

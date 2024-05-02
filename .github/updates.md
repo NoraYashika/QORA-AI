@@ -42,3 +42,8 @@ The corrected calculation:<br>
 accuracy<sub>total</sub> = accuracy<sub>epoch_1</sub> + ... + accuracy<sub>epoch_n</sub><br><br>
 accuracy<sub>average</sub> = accuracy<sub>total</sub> / amount of epochs<br><br>
 accuracy<sub>average</sub> <ins>*</ins> 100 = accuracy<sub>average in percent</sub>
+
+<h1>- Version 1.2.0 -</h1>
+<h2>Release 02.05.2024</h2>
+Addition of the <strong>Time module</strong><br>
+Addition of asking for time into the intents.json file

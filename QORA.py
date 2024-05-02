@@ -12,12 +12,40 @@ from tensorflow.keras.models import load_model
 #import os for filepaths
 import os
 
+# global mod list (list of all imported modules) -- WORKS WITH IDENTIFIER (m_[name here])
+modlst = []
+
+# import modules
+try:
+    from plugins import mod_time
+    modlst.append("m_time")
+except ImportError:
+    print("did not find module \"time\"...")
+
+#import other libraries
+import re
+
 lemmatizer = WordNetLemmatizer()
 intents = json.load(open(f'{os.getcwd()}\\intents.json', 'r'))
 
 words = pickle.load(open(f'{os.getcwd()}\\network\\words.pkl', 'rb'))
 classes = pickle.load(open(f'{os.getcwd()}\\network\\classes.pkl', 'rb'))
 model = load_model(f"{os.getcwd()}\\network\\qora_neural_network.keras")
+
+def clean_sentence_mods(inp):
+    patternlst = [r"\[mod_time\]", r"\[mod_date\]"]
+    res = inp
+
+    for pattern in patternlst:
+        if pattern == patternlst[0] and "m_time" in modlst:
+            t_current = mod_time.Time.gettime()
+            res = re.sub(pattern, t_current, res)
+        
+        if pattern == patternlst[1] and "m_time" in modlst:
+            d_current = mod_time.Time.getdate()
+            res = re.sub(pattern, d_current, res)
+
+    return res
 
 def clean_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -51,7 +79,7 @@ def get_response(intents_lst, intents_json):
         if i['tag'] == tag:
             answer = random.choice(i['responses'])
             break
-    return answer
+    return clean_sentence_mods(answer)
 
 print("Hello, I am QORA, how may I help you?")
 
