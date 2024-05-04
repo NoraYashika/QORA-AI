@@ -1,7 +1,5 @@
 # QORA AI
 
-## Announcement:
-## Updates will be paused for an unknown time (possibly until Feburary 2024)
 
 <div id = "div_data">
     <h2>Data</h2>
@@ -21,6 +19,7 @@
 - [ ] Making it cross-compatible with all operating systems, capable of using python ⚙
 - [ ] <strong>possibly</strong> rewriting the System in an other language 🧰
 - [ ] User Settings for more customizability (first with .ini file, later with GUI >> see in GUI update)
+- [ ] Help Menu
 
 ## Making importable Modules 🧩
 - [x] a time module, to tell the current time and date. ⏲📅
