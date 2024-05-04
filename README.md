@@ -18,8 +18,8 @@
 - [ ] Making a GUI 🖥
 - [ ] Making it cross-compatible with all operating systems, capable of using python ⚙
 - [ ] <strong>possibly</strong> rewriting the System in an other language 🧰
-- [ ] User Settings for more customizability (first with .ini file, later with GUI >> see in GUI update)
-- [ ] Help Menu
+- [ ] User Settings for more customizability (first with .ini file, later with GUI >> see in GUI update) ⚙
+- [ ] Help Menu for training Parameters ❓
 
 ## Making importable Modules 🧩
 - [x] a time module, to tell the current time and date. ⏲📅
